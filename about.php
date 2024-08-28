@@ -26,12 +26,12 @@
   <body>
     <nav>
       <div class="container nav__container">
-        <a href="index.html"><h4>ATUITS</h4></a>
+        <a href="index.php"><h4>ATUITS</h4></a>
         <ul class="nav__menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="courses.php">Courses</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
         <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -218,7 +218,7 @@
     <footer>
       <div class="container footer__container">
         <div class="footer__1">
-          <a href="index.html" class="footer__logo"><h4>ATUITS</h4></a>
+          <a href="index.php" class="footer__logo"><h4>ATUITS</h4></a>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
             ad?
@@ -228,10 +228,10 @@
         <div class="footer__2">
           <h4>Permalinks</h4>
           <ul class="Permalinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"></a>About</li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php"></a>About</li>
+            <li><a href="courses.php">Courses</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
 

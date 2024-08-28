@@ -32,7 +32,7 @@
   <body>
     <nav>
       <div class="container nav__container">
-        <a href="index.html">
+        <a href="index.php">
           <img
             src="images/atuits_new_logo.PNG"
             class="logo"
@@ -42,10 +42,10 @@
         >
 
         <ul class="nav__menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="courses.php">Courses</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
         <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -64,7 +64,7 @@
             new job, or simply want to expand your knowledge base, investing in
             your ICT skills will pay off.
           </p>
-          <a href="courses.html" class="btn btn-primary"> Get Started </a>
+          <a href="courses.php" class="btn btn-primary"> Get Started </a>
         </div>
 
         <div class="header__right">
@@ -177,7 +177,7 @@
               students to build and maintain functional and user-friendly
               websites.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -193,7 +193,7 @@
               (Structured Query Language), and database administration,
               essential for managing data in ICT environments.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -209,7 +209,7 @@
               learn how to design, install, and maintain networks, with an
               emphasis on LANs, WANs, and internet connectivity.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -224,7 +224,7 @@
               develop algorithms, and create simple software applications,
               forming the basis for software development skills.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -240,7 +240,7 @@
               architectures, preparing them for roles in system development and
               project management.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -253,7 +253,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
               culpa at porro exercitationem labore nesciunt vitae!
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
       </div>
@@ -512,7 +512,7 @@
     <footer>
       <div class="container footer__container">
         <div class="footer__1">
-          <a href="index.html" class="footer__logo"><h4>ATUITS</h4></a>
+          <a href="index.php" class="footer__logo"><h4>ATUITS</h4></a>
           <p>
             Technology for development
           </p>
@@ -521,10 +521,10 @@
         <div class="footer__2">
           <h4>Permalinks</h4>
           <ul class="Permalinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"></a>About</li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php"></a>About</li>
+            <li><a href="courses.php">Courses</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
 
