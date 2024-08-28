@@ -106,6 +106,14 @@ btn {
 }
 
 /* ====== NAVBAR ====== */
+.logo{
+  position: fixed;
+  height: auto;
+  left: 85px;
+  width: 50px;
+  border-radius: 20%;
+  
+}
 nav {
   background: transparent;
   width: 100vw;
