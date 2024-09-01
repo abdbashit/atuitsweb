@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="shortcut icon" href="images/atuitslogo.png" type="image/x-icon" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,11 +27,16 @@
   <body>
     <nav>
       <div class="container nav__container">
-        <a href="index.php"><h4>ATUITS</h4></a>
+        <a href="index.php"><h4><img
+            src="images/atuits_new_logo.PNG"
+            class="logo"
+            alt="atuits_logo"
+          /></h4></a>
         <ul class="nav__menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Courses</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -48,10 +54,7 @@
         <div class="about__achievements-right">
           <h1>Achievements</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            quisquam minima reiciendis provident fuga magnam. Magni earum
-            expedita ratione ut amet ipsam voluptatem voluptate explicabo
-            exercitationem. Perspiciatis maiores quasi adipisci.
+          We are thrilled to announce a significant milestone in the history of the ATUITS ICT Department! Through the dedication, hard work, and innovative spirit of our faculty, staff, and students, we have reached new heights of excellence.
           </p>
 
             <div class="achievements__cards">
@@ -220,8 +223,7 @@
         <div class="footer__1">
           <a href="index.php" class="footer__logo"><h4>ATUITS</h4></a>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-            ad?
+            Technology for development
           </p>
         </div>
 
