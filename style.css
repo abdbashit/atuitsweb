@@ -1,3 +1,53 @@
+/* ====== NAVBAR ====== */
+.logo{
+  position: fixed;
+  height: auto;
+  left: 85px;
+  width: 50px;
+  border-radius: 25%;
+  
+}
+nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+/* Change navbar styles on scroll using javascript */
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav__menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav__menu a:hover {
+  color: var(--color-bg2);
+}
+
 
 /* Gallery CSS */
 * {
@@ -237,3 +287,46 @@ header:hover {
   } 
 }
 /*  End of Gallery CSS */ */
+
+/* ====== FOOTER ====== */
+footer {
+  background: var(--color-bg1);
+  padding: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer__container {
+  display: flex; /*change to flex */
+  grid-template-columns: repeat(4 1fr);
+  gap: 5rem;
+}
+
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+  margin: 0 0 2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
+}
