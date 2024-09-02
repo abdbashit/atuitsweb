@@ -16,7 +16,7 @@
   <div class="row">
     <div class="column">
       <div class="content">
-      <a href="lecturer-bio.php">
+      <a href="mrzakaria.php">
         <img src="img/l1.jpeg" alt="lec" style="width:100%">
         <h3>Mr. Zackaria Ismail [HOD]</h3></a>
         
@@ -24,8 +24,10 @@
     </div>
     <div class="column">
       <div class="content">
+      <a href="mrganaa.php">
       <img src="img/l2.jpeg" alt="gra" style="width:100%">
         <h3>Dr. Ernest Ganaa</h3>
+      </a>
        
       </div>
     </div>
