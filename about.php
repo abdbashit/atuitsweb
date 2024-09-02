@@ -110,7 +110,9 @@
 
         <article class="team__member">
           <div class="team__member-image">
-            <img src="./images/Mr. Alhaj ZAKARIA ISMAIL MAHAMUD.PNG" alt="">
+          <a href="lecturer-bio.php">
+            <img src="./images/Mr. Alhaj ZAKARIA ISMAIL MAHAMUD.PNG" alt=""> 
+            a>
           </div>
           <div class="team__member-info">
             <h4>Mr. Alhaj ZAKARIA ISMAIL MAHAMUD</h4>

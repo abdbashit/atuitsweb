@@ -16,8 +16,9 @@
   <div class="row">
     <div class="column">
       <div class="content">
+      <a href="lecturer-bio.php">
         <img src="img/l1.jpeg" alt="lec" style="width:100%">
-        <h3>Mr. Zackaria Ismail [HOD]</h3>
+        <h3>Mr. Zackaria Ismail [HOD]</h3></a>
         
       </div>
     </div>

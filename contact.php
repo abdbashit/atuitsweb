@@ -55,8 +55,7 @@
           </div>
           <h2>Contact Us</h2>
           <p>
-            Asperiores veniam vel doloribus assumenda soluta blanditiis dolores
-            qui voluptates, consequatur vitae.
+          We’d love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Reach out to us through any of the following channels, and we’ll get back to you as soon as possible.
           </p>
           <ul class="contact__details">
             <li>
@@ -65,7 +64,7 @@
             </li>
             <li>
               <i class="uil uil-envelope"></i>
-              <h5>suppor@egattor.com</h5>
+              <h5>atuits@gmail.com</h5>
             </li>
             <li>
               <i class="uil uil-location-point"></i>
