@@ -159,7 +159,7 @@
 
         <article class="team__member">
           <div class="team__member-image">
-            <img src="./images/tm8.jpg" alt="">
+            <img src="./images/Mr.IDDRISU BAMIE MUBASHIR.jpg" alt="">
           </div>
           <div class="team__member-info">
             <h4>Mr. IDDRISU BAMIE MUBASHIR-AHMED</h4>
@@ -174,7 +174,7 @@
 
         <article class="team__member">
           <div class="team__member-image">
-            <img src="./images/tm6.jpg" alt="">
+            <img src="./images/mrfordjour.PNG" alt="">
           </div>
           <div class="team__member-info">
             <h4>Mr. FORDJOUR ANDREWS KWADWO</h4>

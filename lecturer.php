@@ -18,7 +18,7 @@
       <div class="content">
       <a href="mrzakaria.php">
         <img src="img/l1.jpeg" alt="lec" style="width:100%">
-        <h3>Mr. Zackaria Ismail [HOD]</h3></a>
+        <h3>Mr. ZAKARIA ISMAIL [HOD]</h3></a>
         
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="content">
       <a href="mrganaa.php">
       <img src="img/l2.jpeg" alt="gra" style="width:100%">
-        <h3>Dr. Ernest Ganaa</h3>
+        <h3>Dr. ERNEST D GANAA</h3>
       </a>
        
       </div>
@@ -34,17 +34,54 @@
     <div class="column">
       <div class="content">
         <img src="img/l3.jpeg" alt="hand" style="width:100%">
-        <h3>Mr. Afiriye Rocson</h3>
+        <h3>Mr. AFRIYEI ROCKSON</h3>
        
       </div>
     </div>
     <div class="column">
       <div class="content">
-        <a href="achievement.html"><img src="img/l4.jpeg" alt="Mountains" style="width:100%"></a><br><br>
-        <h3>Mr. Kwase Danso</h3>
-       
+      <a href="mrzakaria.php">
+        <img src="img/l4.jpeg" alt="lec" style="width:100%">
+        <h3>Mr. FORDJOUR ANDREWS KWADWO</h3></a>
       </div>
     </div>
+
+    <div class="column">
+      <div class="content">
+      <a href="mrzakaria.php">
+        <img src="img/l5.jpeg" alt="lec" style="width:100%">
+        <h3>Mr. RICHARD OSEI SAKYI</h3></a>
+        
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <a href="mrzakaria.php">
+        <img src="img/l6.jpeg" alt="lec" style="width:100%">
+        <h3>Mr. IDDRISU BAMIE MUBASHIR</h3></a>
+        
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <a href="mrzakaria.php">
+        <img src="img/l7.jpeg" alt="lec" style="width:100%">
+        <h3>Mr. KWASI DANSO</h3></a>
+        
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+      <a href="mrzakaria.php">
+        <img src="img/l8.jpeg" alt="lec" style="width:100%">
+        <h3>Mr. ALHASSAN SEIBA</h3></a>
+        
+      </div>
+    </div>
+
   </div>
   
   </div>
