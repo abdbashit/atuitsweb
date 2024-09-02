@@ -37,6 +37,7 @@
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Courses</a></li>
           <li><a href="gallery.php">Gallery</a></li>
+          <li><a href="project-topics.php">Project-Topics</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
