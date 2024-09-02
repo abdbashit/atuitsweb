@@ -62,7 +62,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-video"></i>
                 </span>
-                <h3>450+</h3>
+                <h3>10+</h3>
                 <p>Courses</p>
               </article>
 
@@ -70,7 +70,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-users-alt"></i>
                 </span>
-                <h3>79,000+</h3>
+                <h3>450+</h3>
                 <p>Students</p>
               </article>
 
@@ -78,7 +78,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-trophy"></i>
                 </span>
-                <h3>26+</h3>
+                <h3>2+</h3>
                 <p>Awards</p>
               </article>
 
@@ -166,7 +166,7 @@
           <div class="team__member-socials">
             <a href="ibmahmed@dhltu.edu.gh" target="_blank"><i class="uil uil-instagram"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://www.linkedin.com/in/bamie-mubashir-ahmed-1384b195/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
           </div>
         </article>
 
@@ -181,7 +181,7 @@
           <div class="team__member-socials">
             <a href="fakwadwo@dhltu.edu.gh" target="_blank"><i class="uil uil-instagram"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://www.linkedin.com/in/andrews-fordjour-56b53b169/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
           </div>
         </article>
 
