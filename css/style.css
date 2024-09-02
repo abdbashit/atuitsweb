@@ -684,3 +684,80 @@ footer ul li a:hover {
 }
 
 
+/* achievements css*/
+
+.frame {
+  width: 110%; /* Adjust the width as needed */
+  height: 80vh; /* Adjust the height as needed */
+  border: 2px solid #034e88; /* Dark Blue border */
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for the frame */
+}
+
+.section_top {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url('images/ac1.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 36s infinite ease-in-out;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.content a {
+  background: #858585;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.content a:hover {
+  background: #034e88;
+  color: #fff;
+}
+
+@keyframes change {
+  0% {
+      background-image: url('images/ac1.jpg');
+  }
+  11.11% {
+      background-image: url('images/ac2.jpg');
+  }
+  22.22% {
+      background-image: url('images/ac3.jpg');
+  }
+  33.33% {
+      background-image: url('images/ac4.jpg');
+  }
+  44.44% {
+      background-image: url('images/ac5.jpg');
+  }
+  55.55% {
+      background-image: url('images/ac6.jpg');
+  }
+  66.66% {
+      background-image: url('images/ac7.jpg');
+  }
+  77.77% {
+      background-image: url('images/ac8.jpg');
+  }
+  88.88% {
+      background-image: url('images/ac9.jpg');
+  }
+  100% {
+      background-image: url('images/ac10.jpg');
+  }
+}

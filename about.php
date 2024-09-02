@@ -49,7 +49,16 @@
     <section class="about__achievements">
       <div class="container about__achievements-container">
         <div class="about__achievements-left">
-          <img src="./images/Wini Macdan Award.jpg" alt="" />
+          <!-- <img src="./images/Wini Macdan Award.jpg" alt="" />  -->
+
+          <div class="frame">
+    <div class="section_top">
+        <div class="content">
+            
+        </div>
+    </div>
+          </div>
+
         </div>
 
         <div class="about__achievements-right">
