@@ -78,7 +78,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-trophy"></i>
                 </span>
-                <h3>2+</h3>
+                <h3>20+</h3>
                 <p>Awards</p>
               </article>
 
@@ -95,7 +95,9 @@
       <div class="container team__container">
         <article class="team__member">
           <div class="team__member-image">
+          <a href="mrganaa.php">
             <img src="./images/Dr. Ernest Ganaa.PNG" alt="">
+</a>
           </div>
           <div class="team__member-info">
             <h4>Dr. ERNEST D GANAA</h4>
@@ -110,9 +112,9 @@
 
         <article class="team__member">
           <div class="team__member-image">
-          <a href="lecturer-bio.php">
+          <a href="mrzakaria.php">
             <img src="./images/Mr. Alhaj ZAKARIA ISMAIL MAHAMUD.PNG" alt=""> 
-            a>
+          </a>
           </div>
           <div class="team__member-info">
             <h4>Mr. Alhaj ZAKARIA ISMAIL MAHAMUD</h4>
