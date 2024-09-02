@@ -200,33 +200,60 @@ header {
   display: flex;
   animation: slide 16s infinite;
 }
-@keyframes slide{
-  0%{
-      transform:translateX(0);
-  }
-  25%{
+@keyframes slide {
+  0% {
       transform: translateX(0);
   }
-  30%{
-      transform: translateX(100%);
+  9.09% { /* 100% / 11 slides */
+      transform: translateX(0);
   }
-  50%{
+  12.73% {
       transform: translateX(-100%);
   }
-  55%{
+  21.82% {
+      transform: translateX(-100%);
+  }
+  25.45% {
       transform: translateX(-200%);
   }
-  75%{
+  34.55% {
       transform: translateX(-200%);
   }
-  80%{
+  38.18% {
       transform: translateX(-300%);
   }
-  100%{
+  47.27% {
       transform: translateX(-300%);
   }
-
+  50.91% {
+      transform: translateX(-400%);
+  }
+  60% {
+      transform: translateX(-400%);
+  }
+  63.64% {
+      transform: translateX(-500%);
+  }
+  72.73% {
+      transform: translateX(-500%);
+  }
+  76.36% {
+      transform: translateX(-600%);
+  }
+  85.45% {
+      transform: translateX(-600%);
+  }
+  89.09% {
+      transform: translateX(-700%);
+  }
+  98.18% {
+      transform: translateX(-700%);
+  }
+  100% {
+      transform: translateX(-800%);
+  }
 }
+
 
 img{
   width: 100%;
@@ -684,7 +711,7 @@ footer ul li a:hover {
 }
 
 
-/* achievements css*/
+/* achievements pictures css manipulation*/
 
 .frame {
   width: 110%; /* Adjust the width as needed */
