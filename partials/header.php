@@ -38,14 +38,17 @@
             class="logo"
             alt="atuits_logo"
           />
-          <h4>ATUITS</h4></a
+          <h4></h4></a
         >
 
         <ul class="nav__menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Courses</a></li>
+          <li><a href="gallery.php">Gallery</a></li>
+          <li><a href="project-topics.php">Project-Topics</a></li>
           <li><a href="contact.php">Contact</a></li>
+          
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
         <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -53,7 +56,7 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <header>
+  <!-- <header>
       <div class="container header__container">
         <div class="header__left">
           <h1>Technology for development</h1>
@@ -65,7 +68,7 @@
             your ICT skills will pay off.
           </p>
           <a href="courses.php" class="btn btn-primary"> Get Started </a>
-        </div>
+        </div> 
 
         <div class="header__right">
           <div class="header__right-image">
@@ -73,5 +76,6 @@
           </div>
         </div>
       </div>
-    </header>
+    </header>  -->
+    
     <!-- END OF HEADER -->

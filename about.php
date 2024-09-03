@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="shortcut icon" href="images/atuitslogo.png" type="image/x-icon" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,11 +27,17 @@
   <body>
     <nav>
       <div class="container nav__container">
-        <a href="index.php"><h4>ATUITS</h4></a>
+        <a href="index.php"><h4><img
+            src="images/atuits_new_logo.PNG"
+            class="logo"
+            alt="atuits_logo"
+          /></h4></a>
         <ul class="nav__menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Courses</a></li>
+          <li><a href="gallery.php">Gallery</a></li>
+          <li><a href="project-topics.php">Project-Topics</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -42,16 +49,22 @@
     <section class="about__achievements">
       <div class="container about__achievements-container">
         <div class="about__achievements-left">
-          <img src="./images/Wini Macdan Award.jpg" alt="" />
+          <!-- <img src="./images/Wini Macdan Award.jpg" alt="" />  -->
+
+          <div class="frame">
+    <div class="section_top">
+        <div class="content">
+            
+        </div>
+    </div>
+          </div>
+
         </div>
 
         <div class="about__achievements-right">
           <h1>Achievements</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            quisquam minima reiciendis provident fuga magnam. Magni earum
-            expedita ratione ut amet ipsam voluptatem voluptate explicabo
-            exercitationem. Perspiciatis maiores quasi adipisci.
+          We are thrilled to announce a significant milestone in the history of the ATUITS ICT Department! Through the dedication, hard work, and innovative spirit of our faculty, staff, and students, we have reached new heights of excellence.
           </p>
 
             <div class="achievements__cards">
@@ -59,7 +72,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-video"></i>
                 </span>
-                <h3>450+</h3>
+                <h3>10+</h3>
                 <p>Courses</p>
               </article>
 
@@ -67,7 +80,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-users-alt"></i>
                 </span>
-                <h3>79,000+</h3>
+                <h3>450+</h3>
                 <p>Students</p>
               </article>
 
@@ -75,7 +88,7 @@
                 <span class="achievements__icon">
                   <i class="uil uil-trophy"></i>
                 </span>
-                <h3>26+</h3>
+                <h3>20+</h3>
                 <p>Awards</p>
               </article>
 
@@ -92,7 +105,9 @@
       <div class="container team__container">
         <article class="team__member">
           <div class="team__member-image">
+          <a href="mrganaa.php">
             <img src="./images/Dr. Ernest Ganaa.PNG" alt="">
+</a>
           </div>
           <div class="team__member-info">
             <h4>Dr. ERNEST D GANAA</h4>
@@ -107,7 +122,9 @@
 
         <article class="team__member">
           <div class="team__member-image">
-            <img src="./images/Mr. Alhaj ZAKARIA ISMAIL MAHAMUD.PNG" alt="">
+          <a href="mrzakaria.php">
+            <img src="./images/Mr. Alhaj ZAKARIA ISMAIL MAHAMUD.PNG" alt=""> 
+          </a>
           </div>
           <div class="team__member-info">
             <h4>Mr. Alhaj ZAKARIA ISMAIL MAHAMUD</h4>
@@ -152,7 +169,7 @@
 
         <article class="team__member">
           <div class="team__member-image">
-            <img src="./images/tm8.jpg" alt="">
+            <img src="./images/Mr.IDDRISU BAMIE MUBASHIR.jpg" alt="">
           </div>
           <div class="team__member-info">
             <h4>Mr. IDDRISU BAMIE MUBASHIR-AHMED</h4>
@@ -161,13 +178,13 @@
           <div class="team__member-socials">
             <a href="ibmahmed@dhltu.edu.gh" target="_blank"><i class="uil uil-instagram"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://www.linkedin.com/in/bamie-mubashir-ahmed-1384b195/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
           </div>
         </article>
 
         <article class="team__member">
           <div class="team__member-image">
-            <img src="./images/tm6.jpg" alt="">
+            <img src="./images/mrfordjour.PNG" alt="">
           </div>
           <div class="team__member-info">
             <h4>Mr. FORDJOUR ANDREWS KWADWO</h4>
@@ -176,7 +193,7 @@
           <div class="team__member-socials">
             <a href="fakwadwo@dhltu.edu.gh" target="_blank"><i class="uil uil-instagram"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://www.linkedin.com/in/andrews-fordjour-56b53b169/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
           </div>
         </article>
 
@@ -220,8 +237,7 @@
         <div class="footer__1">
           <a href="index.php" class="footer__logo"><h4>ATUITS</h4></a>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-            ad?
+            Technology for development
           </p>
         </div>
 
