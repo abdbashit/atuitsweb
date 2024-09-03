@@ -1,3 +1,8 @@
+<?php 
+include '../admin/auxiliaries.php';
+include '../admin/database/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <link rel="shortcut icon" href="images/atuitslogo.png" type="image/x-icon" />
