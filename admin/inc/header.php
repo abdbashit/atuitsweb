@@ -132,17 +132,17 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 			        </li>
 			        
 
-					<li class="treeview <?php if( ($cur_page == 'category-add.php')||($cur_page == 'category.php')||($cur_page == 'category-edit.php') || ($cur_page == 'blog-add.php')||($cur_page == 'blog.php')||($cur_page == 'blog-edit.php') || ($cur_page == 'comment.php') ) {echo 'active';} ?>">
+					<li class="treeview <?php if( ($cur_page == 'category-add.php')||($cur_page == 'category.php')||($cur_page == 'category-edit.php') || ($cur_page == 'course-add.php')||($cur_page == 'course.php')||($cur_page == 'course-edit.php') || ($cur_page == 'comment.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-hand-o-right"></i>
-							<span>Blog</span>
+							<span>course</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
 							<li><a href="category.php"><i class="fa fa-circle-o"></i> Category</a></li>
-							<li><a href="blogs.php"><i class="fa fa-circle-o"></i> Blog</a></li>
+							<li><a href="courses.php"><i class="fa fa-circle-o"></i> course</a></li>
 							<li><a href="comment.php"><i class="fa fa-circle-o"></i> Comment</a></li>
 						</ul>
 					</li>

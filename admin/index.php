@@ -13,9 +13,9 @@ $statement = $pdo->prepare("SELECT * FROM tbl_category");
 $statement->execute();
 $total_category = $statement->rowCount();
 
-$statement = $pdo->prepare("SELECT * FROM tbl_blogs");
+$statement = $pdo->prepare("SELECT * FROM tbl_courses");
 $statement->execute();
-$total_blogs = $statement->rowCount();
+$total_courses = $statement->rowCount();
 
 $statement = $pdo->prepare("SELECT * FROM tbl_photo");
 $statement->execute();
@@ -95,12 +95,12 @@ $total_team_member = $statement->rowCount();
               <i class="fa fa-rss fa-5x"></i>
             </div>
             <div class="col-xs-6 text-right">
-              <p class="announcement-heading"><?php echo $total_blogs; ?></p>
-              <p class="announcement-text"><strong>Blogs</strong></p>
+              <p class="announcement-heading"><?php echo $total_courses; ?></p>
+              <p class="announcement-text"><strong>courses</strong></p>
             </div>
           </div>
         </div>
-        <a href="blogs.php">
+        <a href="courses.php">
           <div class="panel-footer announcement-bottom">
             <div class="row">
               <div class="col-xs-6">

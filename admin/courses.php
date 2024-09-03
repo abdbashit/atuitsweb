@@ -2,10 +2,10 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View blogs</h1>
+		<h1>View courses</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="blog-add.php" class="btn btn-primary btn-sm">Add New</a>
+		<a href="course-add.php" class="btn btn-primary btn-sm">Add New</a>
 	</div>
 </section>
 
@@ -35,21 +35,21 @@
 							$i=0;
 							$statement = $pdo->prepare("SELECT
 
-														t1.blog_id,
-														t1.blog_title,
-														t1.blog_content,
-														t1.blog_content_short,
+														t1.course_id,
+														t1.course_title,
+														t1.course_content,
+														t1.course_content_short,
 														t1.photo,
 														t1.category_id,
 
 														t2.category_id,
 														t2.category_name
 
-							                           	FROM tbl_blogs t1
+							                           	FROM tbl_courses t1
 							                           	JOIN tbl_category t2
 							                           	ON t1.category_id = t2.category_id
 
-							                           	ORDER BY t1.blog_id DESC
+							                           	ORDER BY t1.course_id DESC
 							                           	");
 							$statement->execute();
 							$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
@@ -66,18 +66,18 @@
 										}
 										else
 										{
-											echo '<img src="../assets/uploads/'.$row['photo'].'" alt="'.$row['blog_title'].'" style="width:100px;">';
+											echo '<img src="../assets/uploads/'.$row['photo'].'" alt="'.$row['course_title'].'" style="width:100px;">';
 										}
 										?>
 									</td>
-									<td><?php echo $row['blog_title']; ?></td>
-									<td><?php echo $row['blog_content_short']; ?></td>
+									<td><?php echo $row['course_title']; ?></td>
+									<td><?php echo $row['course_content_short']; ?></td>
 									<td>
 										<?php echo $row['category_name']; ?>
 									</td>
 									<td>										
-										<a href="blog-edit.php?id=<?php echo $row['blog_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-										<a href="#" class="btn btn-danger btn-xs" data-href="blog-delete.php?id=<?php echo $row['blog_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  
+										<a href="course-edit.php?id=<?php echo $row['course_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+										<a href="#" class="btn btn-danger btn-xs" data-href="course-delete.php?id=<?php echo $row['course_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  
 									</td>
 								</tr>
 								<?php

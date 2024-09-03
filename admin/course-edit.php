@@ -4,41 +4,41 @@
 if(isset($_POST['form1'])) {
 	$valid = 1;
 
-	if(empty($_POST['blog_title'])) {
+	if(empty($_POST['course_title'])) {
 		$valid = 0;
-		$error_message .= 'blog title can not be empty<br>';
+		$error_message .= 'course title can not be empty<br>';
 	} else {
 		// Duplicate Category checking
-    	// current blog title that is in the database
-    	$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_id=?");
+    	// current course title that is in the database
+    	$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_id=?");
 		$statement->execute(array($_REQUEST['id']));
 		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 		foreach($result as $row) {
-			$current_blog_title = $row['blog_title'];
+			$current_course_title = $row['course_title'];
 		}
 
-		$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_title=? and blog_title!=?");
-    	$statement->execute(array($_POST['blog_title'],$current_blog_title));
+		$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_title=? and course_title!=?");
+    	$statement->execute(array($_POST['course_title'],$current_course_title));
     	$total = $statement->rowCount();							
     	if($total) {
     		$valid = 0;
-        	$error_message .= 'blog title already exists<br>';
+        	$error_message .= 'course title already exists<br>';
     	}
 	}
 
-	if(empty($_POST['blog_content'])) {
+	if(empty($_POST['course_content'])) {
 		$valid = 0;
-		$error_message .= 'blog content can not be empty<br>';
+		$error_message .= 'course content can not be empty<br>';
 	}
 
-	if(empty($_POST['blog_content_short'])) {
+	if(empty($_POST['course_content_short'])) {
 		$valid = 0;
-		$error_message .= 'blog content (short) can not be empty<br>';
+		$error_message .= 'course content (short) can not be empty<br>';
 	}
 
-	if(empty($_POST['blog_date'])) {
+	if(empty($_POST['course_date'])) {
 		$valid = 0;
-		$error_message .= 'blog publish date can not be empty<br>';
+		$error_message .= 'course publish date can not be empty<br>';
 	}
 
 	if(empty($_POST['category_id'])) {
@@ -69,44 +69,44 @@ if(isset($_POST['form1'])) {
 
 	if($valid == 1) {
 
-		if($_POST['blog_slug'] == '') {
+		if($_POST['course_slug'] == '') {
     		// generate slug
-    		$temp_string = strtolower($_POST['blog_title']);
-    		$blog_slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $temp_string);;
+    		$temp_string = strtolower($_POST['course_title']);
+    		$course_slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $temp_string);;
     	} else {
-    		$temp_string = strtolower($_POST['blog_slug']);
-    		$blog_slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $temp_string);
+    		$temp_string = strtolower($_POST['course_slug']);
+    		$course_slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $temp_string);
     	}
 
     	// if slug already exists, then rename it
-		$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_slug=? AND blog_title!=?");
-		$statement->execute(array($blog_slug,$current_blog_title));
+		$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_slug=? AND course_title!=?");
+		$statement->execute(array($course_slug,$current_course_title));
 		$total = $statement->rowCount();
 		if($total) {
-			$blog_slug = $blog_slug.'-1';
+			$course_slug = $course_slug.'-1';
 		}
 
 		// If previous image not found and user do not want to change the photo
 	    if($previous_photo == '' && $path == '') {
-	    	$statement = $pdo->prepare("UPDATE tbl_blogs SET blog_title=?, blog_slug=?, blog_content=?, blog_content_short=?, blog_date=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE blog_id=?");
-	    	$statement->execute(array($_POST['blog_title'],$blog_slug,$_POST['blog_content'],$_POST['blog_content_short'],$_POST['blog_date'],$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
+	    	$statement = $pdo->prepare("UPDATE tbl_courses SET course_title=?, course_slug=?, course_content=?, course_content_short=?, course_date=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE course_id=?");
+	    	$statement->execute(array($_POST['course_title'],$course_slug,$_POST['course_content'],$_POST['course_content_short'],$_POST['course_date'],$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
 	    }
 
 		// If previous image found and user do not want to change the photo
 	    if($previous_photo != '' && $path == '') {
-	    	$statement = $pdo->prepare("UPDATE tbl_blogs SET blog_title=?, blog_slug=?, blog_content=?, blog_content_short=?, blog_date=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE blog_id=?");
-	    	$statement->execute(array($_POST['blog_title'],$blog_slug,$_POST['blog_content'],$_POST['blog_content_short'],$_POST['blog_date'],$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
+	    	$statement = $pdo->prepare("UPDATE tbl_courses SET course_title=?, course_slug=?, course_content=?, course_content_short=?, course_date=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE course_id=?");
+	    	$statement->execute(array($_POST['course_title'],$course_slug,$_POST['course_content'],$_POST['course_content_short'],$_POST['course_date'],$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
 	    }
 
 
 	    // If previous image not found and user want to change the photo
 	    if($previous_photo == '' && $path != '') {
 
-	    	$final_name = 'blog-'.$_REQUEST['id'].'.'.$ext;
+	    	$final_name = 'course-'.$_REQUEST['id'].'.'.$ext;
             move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
 
-	    	$statement = $pdo->prepare("UPDATE tbl_blogs SET blog_title=?, blog_slug=?, blog_content=?, blog_content_short=?, blog_date=?, photo=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE blog_id=?");
-	    	$statement->execute(array($_POST['blog_title'],$blog_slug,$_POST['blog_content'],$_POST['blog_content_short'],$_POST['blog_date'],$final_name,$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
+	    	$statement = $pdo->prepare("UPDATE tbl_courses SET course_title=?, course_slug=?, course_content=?, course_content_short=?, course_date=?, photo=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE course_id=?");
+	    	$statement->execute(array($_POST['course_title'],$course_slug,$_POST['course_content'],$_POST['course_content_short'],$_POST['course_date'],$final_name,$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
 	    }
 
 	    
@@ -115,14 +115,14 @@ if(isset($_POST['form1'])) {
 
 	    	unlink('../assets/uploads/'.$previous_photo);
 
-	    	$final_name = 'blog-'.$_REQUEST['id'].'.'.$ext;
+	    	$final_name = 'course-'.$_REQUEST['id'].'.'.$ext;
             move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
 
-	    	$statement = $pdo->prepare("UPDATE tbl_blogs SET blog_title=?, blog_slug=?, blog_content=?, blog_content_short=?, blog_date=?, photo=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE blog_id=?");
-	    	$statement->execute(array($_POST['blog_title'],$blog_slug,$_POST['blog_content'],$_POST['blog_content_short'],$_POST['blog_date'],$final_name,$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
+	    	$statement = $pdo->prepare("UPDATE tbl_courses SET course_title=?, course_slug=?, course_content=?, course_content_short=?, course_date=?, photo=?, category_id=?, publisher=?, meta_title=?, meta_keyword=?, meta_description=? WHERE course_id=?");
+	    	$statement->execute(array($_POST['course_title'],$course_slug,$_POST['course_content'],$_POST['course_content_short'],$_POST['course_date'],$final_name,$_POST['category_id'],$publisher,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
 	    }
 
-	    $success_message = 'blog is updated successfully!';
+	    $success_message = 'course is updated successfully!';
 	}
 }
 ?>
@@ -133,7 +133,7 @@ if(!isset($_REQUEST['id'])) {
 	exit;
 } else {
 	// Check the id is valid or not
-	$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_id=?");
+	$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_id=?");
 	$statement->execute(array($_REQUEST['id']));
 	$total = $statement->rowCount();
 	$result = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -146,23 +146,23 @@ if(!isset($_REQUEST['id'])) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Edit blog</h1>
+		<h1>Edit course</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="blogs.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="courses.php" class="btn btn-primary btn-sm">View All</a>
 	</div>
 </section>
 
 <?php
-$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_id=?");
+$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_id=?");
 $statement->execute(array($_REQUEST['id']));
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($result as $row) {
-	$blog_title         = $row['blog_title'];
-	$blog_slug          = $row['blog_slug'];
-	$blog_content       = $row['blog_content'];
-	$blog_content_short = $row['blog_content_short'];
-	$blog_date          = $row['blog_date'];
+	$course_title         = $row['course_title'];
+	$course_slug          = $row['course_slug'];
+	$course_content       = $row['course_content'];
+	$course_content_short = $row['course_content_short'];
+	$course_date          = $row['course_date'];
 	$photo              = $row['photo'];
 	$category_id        = $row['category_id'];
 	$publisher          = $row['publisher'];
@@ -197,33 +197,33 @@ foreach ($result as $row) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-3 control-label">blog Title <span>*</span></label>
+							<label for="" class="col-sm-3 control-label">course Title <span>*</span></label>
 							<div class="col-sm-6">
-								<input type="text" class="form-control" name="blog_title" value="<?php echo $blog_title; ?>">
+								<input type="text" class="form-control" name="course_title" value="<?php echo $course_title; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-		                    <label for="" class="col-sm-3 control-label">blog Slug</label>
+		                    <label for="" class="col-sm-3 control-label">course Slug</label>
 		                    <div class="col-sm-6">
-		                        <input type="text" class="form-control" name="blog_slug" value="<?php echo $blog_slug; ?>">
+		                        <input type="text" class="form-control" name="course_slug" value="<?php echo $course_slug; ?>">
 		                    </div>
 		                </div>
 						<div class="form-group">
-							<label for="" class="col-sm-3 control-label">blog Content <span>*</span></label>
+							<label for="" class="col-sm-3 control-label">course Content <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control editor" name="blog_content"><?php echo $blog_content; ?></textarea>
+								<textarea class="form-control editor" name="course_content"><?php echo $course_content; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-3 control-label">blog Content (Short) <span>*</span></label>
+							<label for="" class="col-sm-3 control-label">course Content (Short) <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="blog_content_short" style="height:100px;"><?php echo $blog_content_short; ?></textarea>
+								<textarea class="form-control" name="course_content_short" style="height:100px;"><?php echo $course_content_short; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-3 control-label">blog Publish Date <span>*</span></label>
+							<label for="" class="col-sm-3 control-label">course Publish Date <span>*</span></label>
 							<div class="col-sm-2">
-								<input type="text" class="form-control" name="blog_date" id="datepicker" value="<?php echo $blog_date; ?>">(Format: dd-mm-yy)
+								<input type="text" class="form-control" name="course_date" id="datepicker" value="<?php echo $course_date; ?>">(Format: dd-mm-yy)
 							</div>
 						</div>
 						<div class="form-group">

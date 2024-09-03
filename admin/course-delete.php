@@ -6,7 +6,7 @@ if(!isset($_REQUEST['id'])) {
 	exit;
 } else {
 	// Check the id is valid or not
-	$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_id=?");
+	$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_id=?");
 	$statement->execute(array($_REQUEST['id']));
 	$total = $statement->rowCount();
 	if( $total == 0 ) {
@@ -19,7 +19,7 @@ if(!isset($_REQUEST['id'])) {
 <?php
 	
 	// Getting photo ID to unlink from folder
-	$statement = $pdo->prepare("SELECT * FROM tbl_blogs WHERE blog_id=?");
+	$statement = $pdo->prepare("SELECT * FROM tbl_courses WHERE course_id=?");
 	$statement->execute(array($_REQUEST['id']));
 	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
 	foreach ($result as $row) {
@@ -31,9 +31,9 @@ if(!isset($_REQUEST['id'])) {
 		unlink('../assets/uploads/'.$photo);	
 	}
 
-	// Delete from tbl_blog
-	$statement = $pdo->prepare("DELETE FROM tbl_blogs WHERE blog_id=?");
+	// Delete from tbl_course
+	$statement = $pdo->prepare("DELETE FROM tbl_courses WHERE course_id=?");
 	$statement->execute(array($_REQUEST['id']));
 
-	header('location: blogs.php');
+	header('location: courses.php');
 ?>
