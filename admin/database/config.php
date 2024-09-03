@@ -11,7 +11,7 @@
 	$dbhost = 'localhost';
 
 	// Database Name
-	$dbname = 'streetlifeafrica_db';
+	$dbname = 'atuitsweb_db';
 
 	// Database Username
 	$dbuser = 'abdul';
@@ -19,8 +19,6 @@
 	// Database Password
 	$dbpass = '';
 
-	// Defining base url
-	// define("BASE_URL", "http://localhost/streetlife-africa");
 
 	try {
 		$pdo = new PDO("mysql:host={$dbhost};dbname={$dbname}", $dbuser, $dbpass);

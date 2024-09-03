@@ -148,7 +148,7 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 					</li>
 
 					<!-- Events -->
-					<li class="treeview <?php if( ($cur_page == 'event-category-add.php')||($cur_page == 'event-category.php')||($cur_page == 'event-category-edit.php') || ($cur_page == 'event-add.php')||($cur_page == 'events.php')||($cur_page == 'event-edit.php') ) {echo 'active';} ?>">
+					<!-- <li class="treeview <?php if( ($cur_page == 'event-category-add.php')||($cur_page == 'event-category.php')||($cur_page == 'event-category-edit.php') || ($cur_page == 'event-add.php')||($cur_page == 'events.php')||($cur_page == 'event-edit.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-hand-o-right"></i>
 							<span>Events</span>
@@ -160,10 +160,10 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 							<li><a href="event-category.php"><i class="fa fa-circle-o"></i> Category</a></li>
 							<li><a href="events.php"><i class="fa fa-circle-o"></i> Event</a></li>
 						</ul>
-					</li>
+					</li> -->
 
 					<!-- Performers -->
-					<li class="treeview <?php if( ($cur_page == 'performer-category-add.php')||($cur_page == 'performer-category.php')||($cur_page == 'performer-category-edit.php') || ($cur_page == 'performer-add.php')||($cur_page == 'performer.php')||($cur_page == 'performer-edit.php') ) {echo 'active';} ?>">
+					<!-- <li class="treeview <?php if( ($cur_page == 'performer-category-add.php')||($cur_page == 'performer-category.php')||($cur_page == 'performer-category-edit.php') || ($cur_page == 'performer-add.php')||($cur_page == 'performer.php')||($cur_page == 'performer-edit.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-hand-o-right"></i>
 							<span>Perfomers</span>
@@ -175,7 +175,7 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 							<li><a href="performer-category.php"><i class="fa fa-circle-o"></i>Category</a></li>
 							<li><a href="performer.php"><i class="fa fa-circle-o"></i>Performer</a></li>
 						</ul>
-					</li>
+					</li> -->
 
 										
 
@@ -209,16 +209,6 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 							<li><a href="photo.php"><i class="fa fa-circle-o"></i> Photo Gallery</a></li>
 						</ul>
 					</li>
-
-					
-					
-
-
-					<li class="treeview <?php if( ($cur_page == 'file-add.php')||($cur_page == 'file.php')||($cur_page == 'file-edit.php') ) {echo 'active';} ?>">
-			          <a href="file.php">
-			            <i class="fa fa-hand-o-right"></i> <span>File Upload (Media)</span>
-			          </a>
-			        </li>
 
 
 					
