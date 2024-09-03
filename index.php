@@ -1,59 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <link rel="shortcut icon" href="images/atuitslogo.png" type="image/x-icon" />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATUITS RESPONSIVE WEBSITE</title>
-
-    <!-- Iconscout CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
-    />
-
-    <!-- Google Fonts (MONTSERRAT) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- SWIPER JS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <!-- CSS LINK -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="container nav__container">
-        <a href="index.html">
-          <img
-            src="images/atuits_new_logo.PNG"
-            class="logo"
-            alt="atuits_logo"
-          />
-          <h4>ATUITS</h4></a
-        >
-
-        <ul class="nav__menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-      </div>
-    </nav>
-    <!-- END OF NAVBAR -->
-
-    <header>
+<?php include 'partials/header.php'; ?>
+  <header>
       <div class="container header__container">
         <div class="header__left">
           <h1>Technology for development</h1>
@@ -64,19 +10,30 @@
             new job, or simply want to expand your knowledge base, investing in
             your ICT skills will pay off.
           </p>
-          <a href="courses.html" class="btn btn-primary"> Get Started </a>
-        </div>
+          <a href="courses.php" class="btn btn-primary"> Get Started </a>
+        </div> 
 
-        <div class="header__right">
-          <div class="header__right-image">
-            <img src="./images/header.svg" alt="" />
+        <div class="swipe">
+          <div class="wrapper">
+            <!--<img src="./images/header.svg" alt="" /> -->
+            <img src="./images/1.jpg" alt="">
+            <img src="./images/2.jpg" alt="">
+            <img src="./images/3.jpg" alt="">
+            <img src="./images/4.jpg" alt="">
+            <img src="./images/5.jpg" alt="">
+            <img src="./images/6.jpg" alt="">
+            <img src="./images/7.jpg" alt="">
+            <img src="./images/8.jpg" alt="">
+            <img src="./images/9.jpg" alt="">
+            <img src="./images/10.jpg" alt="">
+            <img src="./images/11.jpg" alt="">
           </div>
         </div>
       </div>
-    </header>
+    </header>  
     <!-- END OF HEADER -->
-
-    <section class="categories">
+    
+<section class="categories">
       <div class="container categories__container">
         <div class="categories__left">
           <h1>Categories</h1>
@@ -177,7 +134,7 @@
               students to build and maintain functional and user-friendly
               websites.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -193,7 +150,7 @@
               (Structured Query Language), and database administration,
               essential for managing data in ICT environments.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -209,7 +166,7 @@
               learn how to design, install, and maintain networks, with an
               emphasis on LANs, WANs, and internet connectivity.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -224,7 +181,7 @@
               develop algorithms, and create simple software applications,
               forming the basis for software development skills.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -240,7 +197,7 @@
               architectures, preparing them for roles in system development and
               project management.
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
 
@@ -253,7 +210,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
               culpa at porro exercitationem labore nesciunt vitae!
             </p>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
+            <a href="courses.php" class="btn btn-primary">Learn More</a>
           </div>
         </article>
       </div>
@@ -509,82 +466,5 @@
     </section>
     <!-- END OF TESTIMONIALS-->
 
-    <footer>
-      <div class="container footer__container">
-        <div class="footer__1">
-          <a href="index.html" class="footer__logo"><h4>ATUITS</h4></a>
-          <p>
-            Technology for development
-          </p>
-        </div>
-
-        <div class="footer__2">
-          <h4>Permalinks</h4>
-          <ul class="Permalinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"></a>About</li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__3">
-          <h4>Primary</h4>
-          <ul class="privacy">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Refund Policy</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__4">
-          <h4>Contact Us</h4>
-          <div>
-            <p>+233 506678606</p>
-            <p>abashitm@gmail.com</p>
-          </div>
-
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="uil uil-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="uil uil-instagram-alt"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="uil uil-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__copyright">
-        <small>Copyright &copy; ATUITS Website 2024</small>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        //When windows width is >= 600px
-        breakpoints: {
-          600: {
-            slidesPerView: 2,
-          },
-        },
-      });
-    </script>
-  </body>
-</html>
+ 
+<?php include'partials/footer.php'; ?>

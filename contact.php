@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="shortcut icon" href="images/atuitslogo.png" type="image/x-icon" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,14 +25,22 @@
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <nav>
+   <-- <nav>
       <div class="container nav__container">
-        <a href="index.html"><h4>ATUITS</h4></a>
+        <a href="index.php"><h4>
+        <img
+            src="images/atuits_new_logo.PNG"
+            class="logo"
+            alt="atuits_logo"
+          />
+        </h4></a>
         <ul class="nav__menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="courses.php">Courses</a></li>
+          <li><a href="gallery.php">Gallery</a></li>
+          <li><a href="project-topics.php">Project-Topics</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
         <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -47,8 +56,7 @@
           </div>
           <h2>Contact Us</h2>
           <p>
-            Asperiores veniam vel doloribus assumenda soluta blanditiis dolores
-            qui voluptates, consequatur vitae.
+          We’d love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Reach out to us through any of the following channels, and we’ll get back to you as soon as possible.
           </p>
           <ul class="contact__details">
             <li>
@@ -57,7 +65,7 @@
             </li>
             <li>
               <i class="uil uil-envelope"></i>
-              <h5>suppor@egattor.com</h5>
+              <h5>atuits@gmail.com</h5>
             </li>
             <li>
               <i class="uil uil-location-point"></i>
@@ -105,20 +113,19 @@
     <footer>
       <div class="container footer__container">
         <div class="footer__1">
-          <a href="index.html" class="footer__logo"><h4>ATUITS</h4></a>
+          <a href="index.php" class="footer__logo"><h4>ATUITS</h4></a>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-            ad?
+          Technology for development
           </p>
         </div>
 
         <div class="footer__2">
           <h4>Permalinks</h4>
           <ul class="Permalinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"></a>About</li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php"></a>About</li>
+            <li><a href="courses.php">Courses</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
 
