@@ -53,7 +53,7 @@
 
           <div class="frame">
     <div class="section_top">
-        <div class="content">
+        <div class="contents">
             
         </div>
     </div>
