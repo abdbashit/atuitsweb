@@ -111,7 +111,7 @@ btn {
   height: auto;
   left: 85px;
   width: 50px;
-  border-radius: 20%;
+  border-radius: 25%;
   
 }
 nav {
@@ -175,6 +175,94 @@ header {
 .header__left p {
   margin: 1rem 0 2.4rem;
 }
+
+.swipe{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.swipe{
+  width: 80vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 75%;
+  overflow: hidden;
+  border:5px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  9.09% { /* 100% / 11 slides */
+      transform: translateX(0);
+  }
+  12.73% {
+      transform: translateX(-100%);
+  }
+  21.82% {
+      transform: translateX(-100%);
+  }
+  25.45% {
+      transform: translateX(-200%);
+  }
+  34.55% {
+      transform: translateX(-200%);
+  }
+  38.18% {
+      transform: translateX(-300%);
+  }
+  47.27% {
+      transform: translateX(-300%);
+  }
+  50.91% {
+      transform: translateX(-400%);
+  }
+  60% {
+      transform: translateX(-400%);
+  }
+  63.64% {
+      transform: translateX(-500%);
+  }
+  72.73% {
+      transform: translateX(-500%);
+  }
+  76.36% {
+      transform: translateX(-600%);
+  }
+  85.45% {
+      transform: translateX(-600%);
+  }
+  89.09% {
+      transform: translateX(-700%);
+  }
+  98.18% {
+      transform: translateX(-700%);
+  }
+  100% {
+      transform: translateX(-800%);
+  }
+}
+
+
+img{
+  width: 100%;
+}
+
+
+
+
+
 
 /* ========= CATEGORIES ======== */
 .categories {
@@ -619,5 +707,84 @@ footer ul li a:hover {
 
   .footer__socials {
     justify-content: center;
+  }
+}
+
+
+/* achievements pictures css manipulation*/
+
+.frame {
+  width: 110%; /* Adjust the width as needed */
+  height: 80vh; /* Adjust the height as needed */
+  border: 2px solid #034e88; /* Dark Blue border */
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for the frame */
+}
+
+.section_top {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url('images/ac1.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 36s infinite ease-in-out;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.content a {
+  background: #858585;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.content a:hover {
+  background: #034e88;
+  color: #fff;
+}
+
+@keyframes change {
+  0% {
+      background-image: url('images/ac1.jpg');
+  }
+  11.11% {
+      background-image: url('images/ac2.jpg');
+  }
+  22.22% {
+      background-image: url('images/ac3.jpg');
+  }
+  33.33% {
+      background-image: url('images/ac4.jpg');
+  }
+  44.44% {
+      background-image: url('images/ac5.jpg');
+  }
+  55.55% {
+      background-image: url('images/ac6.jpg');
+  }
+  66.66% {
+      background-image: url('images/ac7.jpg');
+  }
+  77.77% {
+      background-image: url('images/ac8.jpg');
+  }
+  88.88% {
+      background-image: url('images/ac9.jpg');
+  }
+  100% {
+      background-image: url('images/ac10.jpg');
   }
 }

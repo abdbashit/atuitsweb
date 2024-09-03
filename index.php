@@ -1,6 +1,39 @@
 <?php include 'partials/header.php'; ?>
+  <header>
+      <div class="container header__container">
+        <div class="header__left">
+          <h1>Technology for development</h1>
+          <p>
+            By honing your skills in areas like programming, cybersecurity, data
+            analysis, and cloud computing, you can stay ahead of industry trends
+            and unlock new opportunities. Whether you're seeking a promotion, a
+            new job, or simply want to expand your knowledge base, investing in
+            your ICT skills will pay off.
+          </p>
+          <a href="courses.php" class="btn btn-primary"> Get Started </a>
+        </div> 
 
-    <section class="categories">
+        <div class="swipe">
+          <div class="wrapper">
+            <!--<img src="./images/header.svg" alt="" /> -->
+            <img src="./images/1.jpg" alt="">
+            <img src="./images/2.jpg" alt="">
+            <img src="./images/3.jpg" alt="">
+            <img src="./images/4.jpg" alt="">
+            <img src="./images/5.jpg" alt="">
+            <img src="./images/6.jpg" alt="">
+            <img src="./images/7.jpg" alt="">
+            <img src="./images/8.jpg" alt="">
+            <img src="./images/9.jpg" alt="">
+            <img src="./images/10.jpg" alt="">
+            <img src="./images/11.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </header>  
+    <!-- END OF HEADER -->
+    
+<section class="categories">
       <div class="container categories__container">
         <div class="categories__left">
           <h1>Categories</h1>

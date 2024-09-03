@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="shortcut icon" href="images/atuitslogo.png" type="image/x-icon" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,11 +31,17 @@
   <body>
     <nav>
       <div class="container nav__container">
-        <a href="index.php"><h4>ATUITS</h4></a>
+        <a href="index.php"><h4><img
+            src="images/atuits_new_logo.PNG"
+            class="logo"
+            alt="atuits_logo"
+          /></h4></a>
         <ul class="nav__menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Courses</a></li>
+          <li><a href="gallery.php">Gallery</a></li>
+          <li><a href="project-topics.php">Project-Topics</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -206,8 +213,7 @@
         <div class="footer__1">
           <a href="index.php" class="footer__logo"><h4>ATUITS</h4></a>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-            ad?
+            Technology for development
           </p>
         </div>
 
