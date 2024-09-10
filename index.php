@@ -466,5 +466,18 @@
     </section>
     <!-- END OF TESTIMONIALS-->
 
+    <section class="newsletter-section">
+    <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest news, events, and exclusive offers!</p>
+        <form action="subscribe.php" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+<!-- END OF NEWSLETTER-->
+
+
  
 <?php include'partials/footer.php'; ?>

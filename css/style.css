@@ -261,9 +261,6 @@ img{
 
 
 
-
-
-
 /* ========= CATEGORIES ======== */
 .categories {
   background: var(--color-bg1);
@@ -457,6 +454,60 @@ img{
   top: -1.5rem;
   transform: rotate(45deg);
 }
+
+/* ====== NEWS LETTER ====== */
+.newsletter-section {
+  background-color: var(--color-bg);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.newsletter-container {
+  background-color: var(--color-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.newsletter-container h2 {
+  color:white;
+  margin-bottom: 15px;
+}
+
+.newsletter-container p {
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.newsletter-container input[type="email"] {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.newsletter-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsletter-container button:hover {
+  background-color: #0056b3;
+}
+
 
 /* ====== FOOTER ====== */
 footer {

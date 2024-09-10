@@ -14,7 +14,7 @@
 	$dbname = 'atuitsweb_db';
 
 	// Database Username
-	$dbuser = 'abdul';
+	$dbuser = 'root';
 
 	// Database Password
 	$dbpass = '';

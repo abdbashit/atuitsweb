@@ -1,6 +1,6 @@
 <?php 
-include '../admin/auxiliaries.php';
-include '../admin/database/config.php';
+include './admin/auxiliaries.php';
+include './admin/database/config.php';
 ?>
 
 <!DOCTYPE html>
